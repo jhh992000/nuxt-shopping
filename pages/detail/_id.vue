@@ -38,6 +38,21 @@ export default {
       title: `Shopping Item Detail - ${this.product.name}`,
       meta: [
         {
+          hid: 'og:title',
+          property: 'og:title',
+          content: '상품 상세 페이지',
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: '상품의 상세 정보를 확인해보세요',
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: 'http://placeimg.com/640/480/fashion',
+        },
+        {
           hid: 'description',
           name: 'description',
           content: `이 상품의 가격은 ${this.product.name} 입니다.`,
