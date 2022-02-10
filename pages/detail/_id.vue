@@ -41,6 +41,11 @@ export default {
         name: 'description',
         content: '이 상품은 OOO 입니다.',
       },
+      {
+        hid: 'description2',
+        name: 'description2',
+        content: '테스트 설명글입니다.',
+      },
     ],
   },
   methods: {
