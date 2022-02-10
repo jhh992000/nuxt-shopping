@@ -33,20 +33,22 @@ export default {
     const product = response.data
     return { product }
   },
-  head: {
-    title: 'Shopping Item Detail',
-    meta: [
-      {
-        hid: 'description',
-        name: 'description',
-        content: '이 상품은 XXX 입니다.',
-      },
-      {
-        hid: 'description2',
-        name: 'description2',
-        content: '테스트 설명글입니다.',
-      },
-    ],
+  head() {
+    return {
+      title: `Shopping Item Detail - ${this.product.name}`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: `이 상품의 가격은 ${this.product.name} 입니다.`,
+        },
+        {
+          hid: 'price',
+          name: 'price',
+          content: `이 상품의 가격은 ${this.product.price} 입니다.`,
+        },
+      ],
+    }
   },
   methods: {
     async addToCart() {
