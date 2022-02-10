@@ -21,12 +21,12 @@
           class="item flex"
           @click="moveToDetailPage(product.id)"
         >
-          <!-- <img
+          <img
             class="product-image"
             :src="product.imageUrl"
             :alt="product.name"
             width="100"
-          /> -->
+          />
           <p>{{ product.name }}</p>
           <span>{{ product.price }}</span>
         </li>
