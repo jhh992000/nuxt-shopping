@@ -39,7 +39,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: '이 상품은 OOO 입니다.',
+        content: '이 상품은 XXX 입니다.',
       },
       {
         hid: 'description2',
